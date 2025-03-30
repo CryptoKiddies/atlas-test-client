@@ -1,0 +1,29 @@
+{
+  "name": "atlas-test-client",
+  "version": "1.0.0",
+  "description": "Test client for Atlas Transaction Sender",
+  "main": "src/build-transactions.ts",
+  "scripts": {
+    "start": "ts-node src/setup-keypair.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:valid-single": "ts-node src/build-transactions.ts valid-single",
+    "test:invalid-single": "ts-node src/build-transactions.ts invalid-single",
+    "test:valid-bundle": "ts-node src/build-transactions.ts valid-bundle",
+    "test:invalid-bundle": "ts-node src/build-transactions.ts invalid-bundle"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/web3.js": "^1.87.6",
+    "@types/axios": "^0.9.36",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

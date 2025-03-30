@@ -1,0 +1,4 @@
+.env
+keypair.json
+public-key.txt
+node_modules/ 
