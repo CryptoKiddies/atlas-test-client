@@ -10,7 +10,8 @@
     "test:valid-single": "ts-node src/build-transactions.ts valid-single",
     "test:invalid-single": "ts-node src/build-transactions.ts invalid-single",
     "test:valid-bundle": "ts-node src/build-transactions.ts valid-bundle",
-    "test:invalid-bundle": "ts-node src/build-transactions.ts invalid-bundle"
+    "test:invalid-bundle-first": "ts-node src/build-transactions.ts invalid-bundle-first",
+    "test:invalid-bundle-second": "ts-node src/build-transactions.ts invalid-bundle-second"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "@solana/web3.js": "^1.87.6",
     "@types/axios": "^0.9.36",
     "axios": "^1.6.7",
+    "bs58": "^6.0.0",
     "dotenv": "^16.4.1"
   },
   "devDependencies": {
